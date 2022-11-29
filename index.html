@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .haha {
+      width: 200px;
+      height: 700px;
+      background-color: bisque;
+      transition: all .3s;
+      border-radius: 8px;
+
+      cursor: pointer;
+    }
+
+    div {
+     display: flex;
+     flex:1;
+     width: 100px;
+     justify-content: space-between;
+      height: 200px;
+      background-color: rgb(15, 78, 57);
+      float: left;
+      margin-right: 20px;
+      transition: all .3s;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="haha"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <span>adada</span>
+
+
+
+  <script>
+//     let aaa = document.querySelector('span')
+//     aaa.onclick = function() {
+//       this.innerHTML='hahaha'
+
+
+//     }
+
+
+
+
+    let div = document.querySelectorAll('div')
+
+    for (let i = 0; i < div.length; i++) {
+      div[i].addEventListener('click', function () {
+
+        for (let j = 0; j < div.length; j++) {
+          div[j].classList.remove('haha')
+
+        }
+        this.classList.add('haha')
+
+
+
+
+      })
+
+    }
+//     console.log()
+//     console.log('dada')
+//     // alert('wdadw')
+//     // prompt('323232')
+//     console.log(typeof '213131')
+//     var dada = 23232
+//     console.log(dada)
+
+
+//     let dadada = 23232,
+//       dads = 'wdadw',
+//       rrr = 323232;
+
+// let ee = 3232
+// let ww = 'dadada'
+
+// let rr = ee
+// ww = rr 
+// console.log(ww)
+
+
+// function Tw(x,y,b) {
+//     this.haha=x
+//     this.hha=b
+// }
+
+// let aaaaa = new Tw(2313,23121111111,2321)
+// console.log(aaaaa)
+  
+// let erter = {
+//   hahah:'2312312',
+//   jjjj:23123123,
+
+//   uu(){
+//     console.log('wdadwdadwwwwwwwwwwwwwwwww')
+//   }
+// }
+// erter.uu()
+
+// function haha(a){
+//   console.log(a)
+
+// }
+
+// haha(231231231)
+
+// function kk(gg){
+//   if(typeof gg==='function'){
+//    console.log('这就对了')
+      
+  
+//   }else{
+//     return 'wadadaq'
+//   }
+
+  
+// }
+// kk(function(){})
+
+// // console.log(jjj)
+// // function jjj(gg){
+
+// //   hhh:'adada'
+
+// // }
+// var gg ={
+//   hhh:'adada',
+//   jjj:23131
+// }
+// gg.uuu='hahahaha'
+// var k = {
+//   ...gg,
+//   hhhhhhh:231321
+// }
+
+// let j = function (){
+//   console.log('231231321')
+// }
+
+
+
+// j()
+
+// var hhh = () => {
+//     console.log('yo')
+// }
+
+// hhh()
+
+// var h = (x,y)=>'wdadwadw'
+
+
+// console.log(h(2313,23213))
+// x+y
+
+// var a = a =>1
+// var b = (x)=> x
+// var c = (x,y) => x+y
+// var d = (x,y,z) =>{
+//   var result = x+y+z
+//   return result
+// }
+
+
+// var kk = 'jjj'
+// console.log( kk.indexOf('j'))
+// while(kk.indexOf('j')!==-1 ){
+//   kk=kk.replace('j','hhh')
+
+// }
+// console.log( kk)
+
+
+// let gg = 2313
+// gg = 'dadadad'
+
+
+
+// // console.log( ll)
+// // console.log( gg )
+
+// let ttt =()=>{console.log('dadada')}
+
+// ttt()
+
+// let erer =  function(){
+
+//     jj()
+// }
+
+// 5>10 ? console.log('hahah') : console.log('lllll')
+
+// const date = new Date() 
+// console.log(date)
+  </script>
+</body>
+
+</html>

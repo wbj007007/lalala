@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            float: left;
+            margin: 20px;
+            transition: all .3s;
+        }
+        .ggg{
+            width: 200px;
+            height: 100px;
+            background-color: #777;
+            transition: all .3s;
+        }
+
+        .jjj {
+            width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ggg"></div>
+    <div></div>
+</body>
+
+<script>
+    let ggg = document.getElementsByClassName("ggg")
+    let div = document.querySelectorAll('div')
+
+    for (let i = 0; i < div.length; i++) {
+        div[i].onclick = function () {
+            for (let j = 0; j < div.length; j++) {
+                div[j].style.width =''
+                div[j].style.backgroundColor = ''
+               }
+
+               this.style.width = '500px'
+               this.style.backgroundColor  = '#999'
+
+             
+    // div[i].style.width='100px'
+
+    }}
+ 
+</script>
+</html>
